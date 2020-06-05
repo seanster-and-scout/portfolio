@@ -13,7 +13,7 @@ html {
 }
 
 * {
-  outline: 1px solid red;
+ /* outline: 1px solid red; */
 }
 
 html {
@@ -27,14 +27,28 @@ html {
 
 .header {
   background: linear-gradient(to bottom,#7a19f1,#332179);
+  padding-top: calc(60px + 1rem);
   min-height: 30vh;
 }
 
 .navbar {
+  padding: 0.5rem 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
+.navbar--scrolling {
+  background: #7a19f1;
+}
+
+.navbar__container {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
 }
 
 .menu__link {
@@ -130,9 +144,11 @@ hr {
 }
 
 .centered-element {
-position: relative;
-margin: 10vh 30%;
-text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 #webapp {
@@ -148,19 +164,23 @@ text-align: center;
 }
 
 #portfolio-button {
-  border-radius: 30%;
-  background-color: #f2cf00;
-  height: 7vh;
-  width: 15vh;
+  border-radius: 25px;
+  background-color: #ffcb05;
+  padding: 0.5rem 1rem;
+  border-width: 0px;
+  margin: 4rem 0;
+  color:rgba(0, 0, 0, .6);
+   
 }
 
 #portfolio-button:hover {
-  background-color: #f2b200;
+  background-color: #deb000;
 }
 
 /*# sourceMappingURL=style.css.map */
 
 .carousel-container {
+  margin:2rem 0;
 }
 
 .carousel {
@@ -180,6 +200,126 @@ text-align: center;
   color:purple;
   text-align: center;
 }
+
+.carousel-skill div {
+  height: 80px;
+}
+
+.carousel-skill h3 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
 p {
   color:black;
+}
+
+.portfolio {
+  background-color: #7a19f1;
+  padding: 2rem;
+}
+
+
+.portfolio__container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+.card {
+  display: flex;
+  border-radius: 10px;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  padding: 2rem;
+  flex-basis: 33%;
+  margin: 0 1rem;
+}
+
+.card h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.card ul li {
+  margin: 1rem 0;
+  color: #333;
+}
+
+.card button {
+  border-radius: 25px;
+  background-color: #ffcb05;
+  padding: 0.5rem 1rem;
+  border-width: 0px;
+}
+
+.card button:hover {
+  background-color: #deb000;
+}
+
+.contact {
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 2rem;
+  color:purple;
+}
+
+.contact div {
+  margin: 1rem 0;
+  display: flex;
+  
+}
+
+.contact textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+}
+
+.contact label {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 1rem;
+  
+}
+
+.contact label input {
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+}
+
+.contact button {
+  
+  border-radius: 25px;
+  background-color: purple;
+  padding: 0.5rem 1rem;
+  border-width: 0px;
+  color: white;
+
+}
+
+.contact button:hover {
+  background-color: rgb(110, 0, 110);
+}
+
+.contact .submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  margin: 0 0.3rem;
 }
