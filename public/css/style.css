@@ -177,4 +177,9 @@ text-align: center;
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
+  color:purple;
+  text-align: center;
+}
+p {
+  color:black;
 }
