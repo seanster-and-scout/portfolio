@@ -1,0 +1,24 @@
+$primary-color: #031424;
+$secondary-color: #30415D;
+$crimson: #CF6766;
+$light-blue: #8EAEBD;
+
+$background-opacity: 0.9;
+
+html {
+    background-color: $primary-color;
+    color: $crimson;
+    
+}
+
+.nav-wrapper {
+    background-color: $crimson;
+
+}
+
+hr {
+    background-color: $light-blue;
+    border: 10px solid $light-blue;;
+    border-radius: 5px;
+}
+
