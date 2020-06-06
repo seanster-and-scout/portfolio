@@ -24,54 +24,44 @@
         <div class="navbar__container">
             <div class="logo">
                 <div class="logo__image"><i class="fa fa-code" style="font-size:36px"></i></div>
-                <div class="logo__text">Sean.B</div>
-                <div class="chat-button">
+                <div class="logo__text" style="padding: 0 1vw">Sean Baklini.</div>
+                <!-- <div class="chat-button">
                     <div class="chat-button__text">Online</div>
                     <div class="chat-button__text-hover">Chat now</div>
-                </div>
+                </div> -->
             </div>
             <div class="menu">
-                <a href="#" class="menu__link">Services</a>
-                <a href="#" class="menu__link">Portfolio</a>
-                <a href="#" class="menu__link">Pricing</a>
+                <a href="#technologies" class="menu__link">Technologies</a>
+                <a href="#portfolio" class="menu__link">Portfolio</a>
+                <a href="#contact" class="menu__link">Contact Me</a>
             </div>
         </div>
     </navbar>
     <header class="header">
         <div class="centered-element">
-            <h3 id="webapp">Web Application Development</h3>
-            <p id="fullstack"> Specializing in Full Stack Web Application</p>
-            <button id="portfolio-button">See Portfolio</button>
+            <h2 id="webapp">Web Application Development</h2>
+            <p id="fullstack">I program to automate processes and simplify work so that more focus can be placed on the
+                customer </p>
+            <a href="#portfolio"> <button id="portfolio-button">See Portfolio</button></a>
         </div>
+
     </header>
+    <a name="technologies"></a>
     <div class="carousel-container">
         <div class="carousel">
-            <div>
-                <div class="carousel-skill">
-                    <div><img src="https://image.flaticon.com/icons/png/512/235/235183.png" width="64a"></div>
-                    <h3>SQL, Normalization, & ERD Diagrams</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div>
-                <div class="carousel-skill">
-                    <div><img src="http://blog.espol.edu.ec/taws/files/2015/11/logo-small.png" width="64a"></div>
-                    <h3>ORM's & Sequelize</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
+
             <div>
                 <div class="carousel-skill">
                     <div><img src="https://codingthesmartway.com/wp-content/uploads/2019/01/mern_logo.png" width="64a">
                     </div>
-                    <h3>MERN Stack</h3>
+                    <h3>Mongo Express React Node (MERN)</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div>
                 <div class="carousel-skill">
                     <div><img src="http://www.iconhot.com/icon/png/coded/512/page-javascript.png" width="64a"></div>
-                    <h3>Javascript & Jquery</h3>
+                    <h3>Vanilla Javascript & Jquery</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -90,61 +80,80 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
+            <div>
+                <div class="carousel-skill">
+                    <div><img src="https://image.flaticon.com/icons/png/512/235/235183.png" width="64a"></div>
+                    <h3>SQL, Normalization, & ERD Diagrams</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="carousel-skill">
+                    <div><img src="http://blog.espol.edu.ec/taws/files/2015/11/logo-small.png" width="64a"></div>
+                    <h3>ORM's & Sequelize</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="portfolio">
+    <a name="portfolio"></a>
+    <div class="portfolio" id="#porfolio">
         <div class="container portfolio__container">
             <div class="card" data-aos="fade-up" data-aos-duration="750" data-aos-delay="0" data-aos-offset="0">
-                <h1>Title</h1>
+                <h1>Flashcard Application</h1>
                 <ul>
-                    <li>Website</li>
-                    <li>Something</li>
-                    <li>Else</li>
+                    <li>Javascript, Jquery</li>
+                    <li>Express, Sequelize</li>
+                    <li>Passport.js, JWT Library (Tokens)</li>
                 </ul>
-                <button>Request quote</button>
+                <button>View Project</button>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="750" data-aos-delay="250" data-aos-offset="0">
-                <h1>Title</h1>
+                <h1>Placeholder</h1>
                 <ul>
                     <li>Website</li>
                     <li>Something</li>
                     <li>Else</li>
                 </ul>
-                <button>Request quote</button>
+                <button>View Project</button>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500" data-aos-offset="0">
-                <h1>Title</h1>
+                <h1>Placeholder</h1>
                 <ul>
                     <li>Website</li>
                     <li>Something</li>
                     <li>Else</li>
                 </ul>
-                <button>Request quote</button>
+                <button>View Project</button>
             </div>
         </div>
+
     </div>
-    <div class="contact">
-        <h3>Contact me</h3>
-        <form>
-            <div>
-                <label class="email"> Email
-                    <input name="email" type="email">
+    <a name="contact"></a>
+    <div class="contact-container">
+        <div class="contact">
+            <h2>Contact me</h2>
+            <form>
+                <div>
+                    <label class="email"> Email
+                        <input name="email" type="email">
+                    </label>
+                    <label class="subject"> Subject
+                        <input name="subject" type="text">
+                    </label>
+                </div>
+                <label class="description"> Description
+                    <textarea name="description" class="description"></textarea>
                 </label>
-                <label class="subject"> Subject
-                    <input name="subject" type="text">
-                </label>
+                <div class="submit-container">
+                    <button>Submit</button>
+                </div>
+            </form>
+            <div class="footer">
+                <a href="#">Github</a>
+                <span class="pipe">|</span>
+                <a href="#">LinkedIn</a>
             </div>
-            <label class="description"> Description
-                <textarea name="description" class="description"></textarea>
-            </label>
-            <div class="submit-container">
-                <button>Submit</button>
-            </div>
-        </form>
-        <div class="footer">
-            <a href="#">Github</a>
-            <span class="pipe">|</span>
-            <a href="#">LinkedIn</a>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

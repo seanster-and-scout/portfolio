@@ -170,6 +170,7 @@ hr {
   border-width: 0px;
   margin: 4rem 0;
   color:rgba(0, 0, 0, .6);
+  
    
 }
 
@@ -274,6 +275,8 @@ p {
   align-items: center;
   margin: 2rem;
   color:purple;
+  width: 40vw;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1)
 }
 
 .contact div {
@@ -322,4 +325,9 @@ p {
 
 .footer a {
   margin: 0 0.3rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
 }
