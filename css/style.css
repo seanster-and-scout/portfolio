@@ -26,7 +26,7 @@ html {
 }
 
 .header {
-  background: linear-gradient(to bottom,#1d1e22,#393f4d);
+  background: linear-gradient(to bottom,#7a19f1,#332179);
   padding-top: calc(60px + 1rem);
   min-height: 30vh;
 }
@@ -37,10 +37,12 @@ html {
   z-index: 999;
   top: 0;
   width: 100%;
+  
 }
 
-.navbar--scrolling {
-  background: #393f4d;
+.navbar-scrolling {
+  
+  background: #332179;
 }
 
 .navbar__container {
@@ -169,6 +171,7 @@ hr {
   padding: 0.5rem 1rem;
   border-width: 0px;
   margin: 4rem 0;
+  font-weight: bold;
   color:rgba(0, 0, 0, .6);
   
    
@@ -217,7 +220,7 @@ p {
 }
 
 .portfolio {
-  background-color: #393f4d;
+  background-color: #332179;
   padding: 2rem;
 }
 
@@ -226,6 +229,8 @@ p {
   display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
+  
+
 }
 
 .card {
@@ -237,7 +242,7 @@ p {
   background: #FFF;
   padding: 2rem;
   flex-basis: 33%;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 }
 
 .card h1 {

@@ -8,9 +8,9 @@ $(document).ready(function () {
 
     $(document).on('scroll', (e) => {
         if (window.scrollY > 50) {
-            $('.navbar').addClass('navbar--scrolling')
+            $('.navbar').addClass('navbar-scrolling')
         } else {
-            $('.navbar').removeClass('navbar--scrolling')
+            $('.navbar').removeClass('navbar-scrolling')
         }
     })
 });
