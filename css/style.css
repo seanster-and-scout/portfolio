@@ -239,7 +239,8 @@ p {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  background: #FFF;
+  background-image: url("videos/Blog Giph.gif");
+  background: white;
   padding: 2rem;
   flex-basis: 33%;
   margin: 1rem 1rem;
